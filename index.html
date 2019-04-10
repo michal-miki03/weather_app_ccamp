@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name="decription" content=>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+        <link rel='stylesheet' type='text/css' href='styles.css'>
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+        <link rel="shortcut icon" href="img/iconfinder_cloudy_2995001.png"/>
+        <title>Weather app</title>
+   </head>
+<body>
+
+    <div class='header'>
+
+        <div class="clockbox">
+
+            <img id='calender' src='img/icons8-calender-48.png' alt='Calender'>
+            <div id="date"></div>
+            <div id="clock"></div>
+
+        </div>
+        <div class="title">
+
+            <a href='#' class='title-text'>Weather App</a>
+            <div class='icons'>
+
+                <canvas id='icon1' width='64' height='64'></canvas>
+                <canvas id='icon2' width='64' height='64'></canvas>
+                <canvas id='icon3' width='64' height='64'></canvas>
+                <canvas id='icon4' width='64' height='64'></canvas>
+                <canvas id='icon5' width='64' height='64'></canvas>
+                <canvas id='icon6' width='64' height='64'></canvas>
+
+            </div>
+        </div>
+    </div>
+
+    <div class='container'>
+    
+        <div class='subtitle'>
+
+            <h3 class='subtitle-text'>Check current weather in chosen city...</h3>
+
+        </div>
+
+        <div class='form'>
+
+            <input id='textView' type='text' name='city' placeholder='  Type city'>
+            <br>
+            <input id='button' type='submit' value='Search' input>
+
+        </div>
+
+        <li class='city-data'>
+
+            <div id='city-name'></div>
+
+                <div id="data">
+
+                    <ul id='main-data'>
+
+                        <li><img id='weather-icon'></li>
+                        <li id='temperature'></li><span id='unit'></span>
+                        <h3 id='description'></h3>
+
+                    </ul>
+                    <ul class='additional-data'>
+
+                        <li><img id='icon-pressure'><div id='pressure'></div></li>
+                        <li><img id='icon-humidity'><div id='humidity'></div></li>
+                        <li><img id='icon-wind'><div id='wind-speed'></div></li>
+                        <li id='location'></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+  <script src='js/skycons.js'></script>
+  <script src='js/weather.js'></script>
+  <script src='js/clock.js'></script>
+</body>
+</html>
