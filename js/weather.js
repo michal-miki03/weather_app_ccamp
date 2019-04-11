@@ -84,11 +84,11 @@ function run(receivedData){
     getTempratureCelsius = receivedData.main.temp;
     temperature.innerHTML = `${Math.floor(getTempratureCelsius)}&#176`;
     unit.innerText = 'C';
-    icon_pressure.src = '../img/icons8-atmospheric-pressure-filled-32.png';
+    icon_pressure.src = 'img/icons8-atmospheric-pressure-filled-32.png';
     pressure.innerHTML = `Pressure: ${receivedData.main.pressure} hPa `;
-    icon_humidity.src = '../img/icons8-humidity-32.png';
+    icon_humidity.src = 'img/icons8-humidity-32.png';
     humidity.innerHTML = `Humidity: ${receivedData.main.humidity} %`;
-    icon_wind.src = '../img/icons8-air-32.png';
+    icon_wind.src = 'img/icons8-air-32.png';
     wind_speed.innerHTML = `Wind speed: ${receivedData.wind.speed} m/s`;
     country.innerText = `Country: ${receivedData.sys.country}`;
 }
