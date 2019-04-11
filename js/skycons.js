@@ -1,3 +1,5 @@
+ /* From https://darkskyapp.github.io/skycons/ */
+
 (function(global) {
   "use strict";
 
