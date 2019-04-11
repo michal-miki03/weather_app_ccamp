@@ -60,7 +60,7 @@ temperature.addEventListener('click', ()=>{
 })
 
 function searchWeatherInfo(cityName){
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=${appKey}&units=${units}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=${appKey}&units=${units}`)
     .then(async (resp) => {
         if(resp.ok){
             return resp.json();
@@ -79,7 +79,7 @@ function run(receivedData){
     
     data.style.display = 'block';
 
-    weather_icon.src = `http://openweathermap.org/img/w/${receivedData.weather[0].icon}.png`;
+    weather_icon.src = `https://openweathermap.org/img/w/${receivedData.weather[0].icon}.png`;
     description.innerText = receivedData.weather[0].description;
     getTempratureCelsius = receivedData.main.temp;
     temperature.innerHTML = `${Math.floor(getTempratureCelsius)}&#176`;
