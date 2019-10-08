@@ -1,7 +1,7 @@
 # weather_app_ccamp
 Weather App CodersCamp 2019 Project
 
-Deployment https://michal-miki03.github.io/weather_app_ccamp/
+Deployment https://micwiccode.github.io/weather_app_ccamp/
 
 Homepage:
 ![homepage](https://user-images.githubusercontent.com/47744390/64361808-94233b80-d00d-11e9-9f84-0165900fee30.jpg)
